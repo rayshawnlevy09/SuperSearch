@@ -17,7 +17,27 @@ The help (**-h**) flag can be used to search for a specific **section** based on
 susearch command, such as: *options*, *common*, *limits*, *output* and *limit/output*. These are 
 all of the usage patterns available for the command. The *-h* flag can also be used on its own 
 revealing all of the named sections.
+<br><br>
 
-There is much more that SuperSearch can do and more shall come.
+<h1 align="center"><strong>Getting Started</strong></h1><br><br>
 
-Please create an issue if there are any bugs and I'll be happy to fix them.
+<h2 align="center"><strong>Binary File</strong></h2>
+<ol>
+  <li> Download the binary file </li>
+  <li> In the same directory enter the commands <code>sudo chown root ./susearch</code> - changes the owner of the file to root </li>
+  <li> Then, enter the commands <code>sudo chmod ug+rws ./susearch</code> - changes the mode of the file giving it special permissions </li>
+  <li> Then, enter the commands <code>sudo mv ./susearch ~/.local/bin</code> - move the file into the /home/your_username/.local/bin directory </li>
+  <li> Then, enter the commands <code>sudo update-alternatives --install /usr/bin/susearch susearch ~/.local/bin/susearch 1</code> - create an alternative link </li>
+</ol>
+
+<br>The 5 steps above will allow you to run the file with root privileges and use the command from within any directory or location in the terminal.<br><br><br>
+
+<h2 align="center"><strong>Archive tar.gz</strong></h2>
+<ol>
+  <li> Download the archive </li>
+  <li> In the current directory, enter the commands <code>tar -xzvf susearch-x86_64-linux.tar.gz</code> - extract the file from the archive </li>
+  <li> Then, perform steps 2-5 as shown above for the binary file. </li>
+</ol>
+<br><br>
+Finally, to change the directory to your home directory enter the command <code>cd ~</code> and type the command shown below 
+<code>susearch -h common</code> - shows the common susearch usage patterns
