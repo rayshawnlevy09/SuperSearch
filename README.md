@@ -5,8 +5,8 @@
 A terminal program built for both relative and system-wide searches.
 *SuperSearch*, was built with simplicity and control in mind. SuperSearch has the ability to 
 search for filenames and directories, and outputting the paths associated with either or. 
-Though, anything containing the name, be it a filename or directory, will be found. For example, 
-given the filename **test.txt**, if there are files such as: *help_test.txt* or *new_test.txt*, 
+Though, anything containing the name, be it a filename or directory, will be found if it / they exist. 
+For example, given the filename **test.txt**, if there are files such as: *help_test.txt* or *new_test.txt*, 
 they will be shown as **Found** in the output.
 
 To combat the number of files being found containing a given name, SuperSearch has a **--limit** 
