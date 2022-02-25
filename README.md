@@ -9,7 +9,7 @@ Though, anything containing the name, be it a filename or directory, will be fou
 For example, given the filename **test.txt**, if there are files such as: *help_test.txt* or *new_test.txt*, 
 they will be shown as **Found** in the output.
 
-An example of how this will look is shown given in the link: [SuperSearch-Output](https://htmlpreview.github.io/?https://github.com/rayshawnlevy09/SuperSearch/blob/main/SuperSearch-Output.html)
+An example of how this will look is shown given in the link: [SuperSearch-Output](https://rayshawnlevy09.github.io/SuperSearch_Output/)
 
 To combat the number of files being found containing a given name, SuperSearch has a **--limit** 
 option which will only find the specified number of paths, and limits the output based on those 
