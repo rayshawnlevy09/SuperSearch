@@ -1,4 +1,7 @@
 # SuperSearch (susearch)
+
+**IMPORTANT NOTE**: SuperSearch is only available for *Linux x86_64* systems
+
 A terminal program written in Python (Cython) built for both relative and system-wide searches.
 *SuperSearch*, was built with simplicity and control in mind. SuperSearch has the ability to 
 search for filenames and directories, and outputting the paths associated with either or. 
