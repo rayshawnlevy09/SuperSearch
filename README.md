@@ -23,10 +23,15 @@ revealing all of the named sections.
 
 <h2 align="center"><strong>Binary File</strong></h2>
 <ol>
-  <li> Download the binary file </li>
-  <li> In the same directory enter the commands <code>sudo chown root ./susearch</code> - changes the owner of the file to root </li>
-  <li> Then, enter the commands <code>sudo chmod ug+rws ./susearch</code> - changes the mode of the file giving it special permissions </li>
-  <li> Then, enter the commands <code>sudo mv ./susearch ~/.local/bin</code> - move the file into the /home/your_username/.local/bin directory </li>
+  <li> Download the binary file </li><br>
+  <li> In the same directory enter the commands <code>sudo chown root ./susearch</code> - changes the owner of the file to root </li><br>
+  <li> Next, you'll change the permissions of the file:
+    <ul>
+      <br><li> Common: enter the command <code> sudo chmod u+x ./susearch </code> - gives the current user permission to execute the file </li><br>
+      <li> Reccomended: enter the command <code> sudo chmod ug+rws ./susearch </code> - allows the file to be executed with the permissions of its owner regardless of what user is executing the file if that is what you prefer</li><br>
+    </ul>
+  </li>
+  <li> Then, enter the commands <code>sudo mv ./susearch ~/.local/bin</code> - move the file into the /home/your_username/.local/bin directory </li><br>
   <li> Then, enter the commands <code>sudo update-alternatives --install /usr/bin/susearch susearch ~/.local/bin/susearch 1</code> - create an alternative link </li>
 </ol>
 
@@ -34,9 +39,9 @@ revealing all of the named sections.
 
 <h2 align="center"><strong>Archive tar.gz</strong></h2>
 <ol>
-  <li> Download the archive </li>
-  <li> In the current directory, enter the commands <code>tar -xzvf susearch-x86_64-linux.tar.gz</code> - extract the file from the archive </li>
-  <li> Then, perform steps 2-5 as shown above for the binary file. </li>
+  <li> Download the archive </li><br>
+  <li> In the current directory, enter the commands <code>tar -xzvf susearch-x86_64-linux.tar.gz</code> - extract the file from the archive </li><br>
+  <li> Then, perform steps 2-5 as shown above for the binary file. </li><br>
 </ol>
 <br><br>
 Finally, to change the directory to your home directory enter the command <code>cd ~</code> and type the command shown below 
