@@ -2,10 +2,11 @@
 
 **IMPORTANT NOTE**: SuperSearch is only available for *Linux x86_64* and *Windows x86_64* systems
 
-A terminal / command line program built for both system-wide and relative path searches.
+A terminal / command line program built for system-wide searches while also allowing a search path to be specified.
 *SuperSearch*, was built with simplicity and control in mind and has the ability to 
-search for filenames and / or directories. The path(s) associated with the given name is sent to stdout. 
-Though, anything containing the name being searched for, will be found if it / they exist. 
+search for filenames or directories and such path(s) associated with the given name is sent to stdout. 
+If a filename is specified without an extension, susearch will still find the file. SuperSearch doesn't search for 
+relative paths, but it does search a given path if specified by the **-p** flag.
 For example, given the filename **test.txt**, if there are files such as: *help_test.txt* or *new_test.txt*, 
 they will be shown as **Found** in the output.
 
