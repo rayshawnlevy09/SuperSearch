@@ -2,17 +2,20 @@
 
 **IMPORTANT NOTE**: SuperSearch is only available for *Linux x86_64* and *Windows x86_64* systems
 
-A terminal / command line program built for both system-wide and relative path searches.
+A terminal / command line program built for system-wide searches while also allowing a search path to be specified.
 *SuperSearch*, was built with simplicity and control in mind and has the ability to 
-search for filenames and / or directories. The path(s) associated with the given name is sent to stdout. 
-Though, anything containing the name being searched for, will be found if it / they exist. 
-For example, given the filename **test.txt**, if there are files such as: *help_test.txt* or *new_test.txt*, 
-they will be shown as **Found** in the output.
+search for filenames or directories and such path(s) associated with the given name is sent to stdout. 
+If a filename is specified without an extension, susearch will still find the file. SuperSearch doesn't search for 
+relative paths, but it does search a given path if specified by the **-p** flag.
 
-To combat the number of files being found containing the given name, SuperSearch has a **--limit** option 
-which limits the number of paths to find and doesn't limit the output or number of paths being searched. 
-When the number of paths found is consistent with the limit number, susearch stops searching and sends what it 
-has found to the standard output device (displays each of the paths where the given name was found).
+*SuperSearch* is similar to **mlocate** and **find** on Linux, but without the pattern matching and takes a more simplistic approach.
+*SuperSearch* also, by default, compares a given name (both filenames and directory names) to symlinks, but doesn't follow them, which 
+prevents having to set an extra flag or two and this setting can not be turned off.
+
+SuperSearch also has a **--limit** option which limits the number of paths to find and 
+doesn't limit the output or number of paths being searched. When the number of paths that are found is consistent 
+with the limit number, susearch stops searching and sends what it has found to the standard output device 
+(displays each of the paths where the given name was found).
 
 The help or (**-h**) flag, can be used to search for a specific **section** based on the usage of the 
 susearch command, such as: *options*, *common*, *limits*, *output* and *limit/output*. These are 
